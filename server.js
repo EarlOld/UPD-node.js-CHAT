@@ -14,7 +14,7 @@ server.on('message', (message, remote) => {
   console.log('[' + remote.address + ']: '+ message);
 });
 
-server.bind(PORT, HOST);
+server.bind(PORT);
 
 function Command() {
   process.stdin.on('data', (chunk) => {
