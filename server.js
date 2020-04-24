@@ -1,7 +1,7 @@
 const dgram = require('dgram');
 const util = require('util');
 const PORT = 3333;
-const HOST = process.argv[2].replace(/\n|\n/g, '');
+const HOST = process.argv[2];
 
 const server = dgram.createSocket('udp4');
 
